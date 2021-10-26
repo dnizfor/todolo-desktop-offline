@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolo</title>
+    <link rel="stylesheet" href="./desktop.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav">
+            <div class="nav-date" id="todolist-date">
+                10 aralik 2001
+            </div>
+
+            <div class="nav-menu" id="calendar-date">
+                <div>10 aralik 2001 </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="todolist">
+
+                <form class="todolist-form">
+
+                    <button id="todolist-submit" type="submit" class="submit-button">+</button>
+                    <input id="todolist-input" class="input-area" type="text">
+
+                </form>
+
+                <div class="todolist-body" id="todolist-body">
+
+
+                </div>
+
+            </div>
+
+
+            <div class="table">
+
+                <div class="table-head">
+                    <div class="cell">Pazartesi</div>
+                    <div class="cell">Sali</div>
+                    <div class="cell">Carsamba</div>
+                    <div class="cell">Persembe</div>
+                    <div class="cell">Cuma</div>
+                    <div class="cell">Cumartesi</div>
+                    <div class="cell">Pazar</div>
+                </div>
+
+                <div id="table-body">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+
+        document.getElementById("calendar-date").innerHTML = new Date().toLocaleDateString("tr-TR", options)
+
+        const options2 = { year: 'numeric', month: 'long', day: 'numeric' }
+
+        document.getElementById("todolist-date").innerHTML = new Date().toLocaleDateString("tr-TR", options2)
+
+    </script>
+
+
+    <script src="./scripts/calendarMaker.js"></script>
+    <script src="./scripts/todolistMaker.js"></script>
+    <script src="./components/TodoCard.js"></script>
+    <script src="./components/CellCard.js"></script>
+</body>
+
+</html>
