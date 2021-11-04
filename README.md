@@ -3,7 +3,12 @@
 
 Todolo is offline and on your desktop now !
 
+todolo : https://www.youtube.com/watch?v=B3cvaSI4LpI
+
 
 # Development 
 
-We use Electon jS , Web Companents And Vanilla JS
+We use : 
+- Electon jS 
+- Web Companents
+- Vanilla JS
