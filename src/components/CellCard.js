@@ -106,7 +106,7 @@ class CellCard extends HTMLElement {
 
         if (targetStatus ===  "true") {
 
-            this.shadowRoot.querySelector('div').innerHTML= `<img src="../public/target.png" alt="target">`
+            this.shadowRoot.querySelector('div').innerHTML= `<img src="./assets/target.png" alt="target">`
 
             
         }
